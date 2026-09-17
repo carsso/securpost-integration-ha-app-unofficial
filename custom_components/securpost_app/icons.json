@@ -1,0 +1,30 @@
+{
+  "entity": {
+    "event": {
+      "mailbox_event": {
+        "default": "mdi:mailbox-up"
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "default": "mdi:mailbox-open-up"
+      }
+    },
+    "binary_sensor": {
+      "premium": {
+        "default": "mdi:crown-outline"
+      },
+      "email_notifications": {
+        "default": "mdi:email-outline"
+      },
+      "push_notifications": {
+        "default": "mdi:cellphone-message"
+      }
+    },
+    "sensor": {
+      "reminder_interval": {
+        "default": "mdi:bell-ring-outline"
+      }
+    }
+  }
+}

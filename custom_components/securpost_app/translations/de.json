@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Securpost verbinden",
+        "description": "Melden Sie sich mit dem Securpost-Konto an, das Sie in der mobilen App verwenden.",
+        "data": {
+          "email": "E-Mail",
+          "password": "Passwort"
+        }
+      },
+      "two_factor": {
+        "title": "Zwei-Faktor-Authentifizierung",
+        "description": "Geben Sie den Bestätigungscode für Ihr Securpost-Konto ein.",
+        "data": {
+          "code": "Bestätigungscode"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Securpost erneut verbinden",
+        "description": "Ihre Securpost-Sitzung ist abgelaufen. Melden Sie sich erneut an, um die Verbindung wiederherzustellen.",
+        "data": {
+          "email": "E-Mail",
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ungültige E-Mail-Adresse oder ungültiges Passwort",
+      "invalid_code": "Ungültiger Bestätigungscode",
+      "cannot_connect": "Verbindung zu Securpost fehlgeschlagen"
+    },
+    "abort": {
+      "already_configured": "Das Konto ist bereits konfiguriert",
+      "reauth_successful": "Securpost erfolgreich neu verbunden",
+      "already_in_progress": "Eine Konfiguration ist bereits im Gange",
+      "no_session": "Securpost hat keine Sitzung zurückgegeben"
+    },
+    "create_entry": {
+      "default": "Erfolgreich mit Securpost verbunden"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "package_count": {
+        "name": "Wartende Sendungen"
+      },
+      "mailbox_content": {
+        "name": "Briefkasteninhalt",
+        "state": {
+          "letter": "Brief",
+          "parcel": "Paket",
+          "empty": "Leer",
+          "unknown": "Unbekannt"
+        }
+      },
+      "battery": {
+        "name": "Batterie"
+      },
+      "reminder_interval": {
+        "name": "Erinnerungsintervall"
+      }
+    },
+    "event": {
+      "mailbox_event": {
+        "name": "Briefkasten-Ereignis",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "mailbox_closed": "Briefkasten geschlossen",
+              "mailbox_open": "Briefkasten offen",
+              "unknown": "Unbekannt"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "name": "Foto des Briefkasteninhalts"
+      }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "name": "Verbindung"
+      },
+      "battery_low": {
+        "name": "Batterie schwach"
+      },
+      "premium": {
+        "name": "Securpost Premium"
+      },
+      "email_notifications": {
+        "name": "E-Mail-Benachrichtigungen"
+      },
+      "push_notifications": {
+        "name": "Push-Benachrichtigungen"
+      }
+    }
+  }
+}

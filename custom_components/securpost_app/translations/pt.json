@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ligar o Securpost",
+        "description": "Inicie sessão com a conta Securpost que utiliza na aplicação móvel.",
+        "data": {
+          "email": "E-mail",
+          "password": "Palavra-passe"
+        }
+      },
+      "two_factor": {
+        "title": "Autenticação de dois fatores",
+        "description": "Introduza o código de verificação da sua conta Securpost.",
+        "data": {
+          "code": "Código de verificação"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Voltar a ligar o Securpost",
+        "description": "A sua sessão Securpost expirou. Inicie sessão novamente para voltar a ligar.",
+        "data": {
+          "email": "E-mail",
+          "password": "Palavra-passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou palavra-passe inválidos",
+      "invalid_code": "Código de verificação inválido",
+      "cannot_connect": "Não foi possível ligar ao Securpost"
+    },
+    "abort": {
+      "already_configured": "A conta já está configurada",
+      "reauth_successful": "Securpost reconectado com sucesso",
+      "already_in_progress": "Uma configuração já está em andamento",
+      "no_session": "O Securpost não devolveu qualquer sessão"
+    },
+    "create_entry": {
+      "default": "Conectado ao Securpost com sucesso"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "package_count": {
+        "name": "Entregas em espera"
+      },
+      "mailbox_content": {
+        "name": "Conteúdo da caixa de correio",
+        "state": {
+          "letter": "Carta",
+          "parcel": "Encomenda",
+          "empty": "Vazio",
+          "unknown": "Desconhecido"
+        }
+      },
+      "battery": {
+        "name": "Bateria"
+      },
+      "reminder_interval": {
+        "name": "Intervalo de lembrete"
+      }
+    },
+    "event": {
+      "mailbox_event": {
+        "name": "Evento da caixa de correio",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "mailbox_closed": "Caixa de correio fechada",
+              "mailbox_open": "Caixa de correio aberta",
+              "unknown": "Desconhecido"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "name": "Foto do conteúdo da caixa de correio"
+      }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "name": "Ligação"
+      },
+      "battery_low": {
+        "name": "Bateria fraca"
+      },
+      "premium": {
+        "name": "Securpost Premium"
+      },
+      "email_notifications": {
+        "name": "Notificações por e-mail"
+      },
+      "push_notifications": {
+        "name": "Notificações push"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connecter Securpost",
+        "description": "Connectez-vous avec le compte Securpost que vous utilisez dans l'application mobile.",
+        "data": {
+          "email": "E-mail",
+          "password": "Mot de passe"
+        }
+      },
+      "two_factor": {
+        "title": "Authentification à deux facteurs",
+        "description": "Saisissez le code de vérification de votre compte Securpost.",
+        "data": {
+          "code": "Code de vérification"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnecter Securpost",
+        "description": "Votre session Securpost a expiré. Reconnectez-vous pour rétablir la connexion.",
+        "data": {
+          "email": "E-mail",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou mot de passe invalide",
+      "invalid_code": "Code de vérification invalide",
+      "cannot_connect": "Impossible de se connecter à Securpost"
+    },
+    "abort": {
+      "already_configured": "Le compte est déjà configuré",
+      "reauth_successful": "Securpost reconnecté avec succès",
+      "already_in_progress": "Une configuration est déjà en cours",
+      "no_session": "Securpost n'a renvoyé aucune session"
+    },
+    "create_entry": {
+      "default": "Connecté à Securpost avec succès"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "package_count": {
+        "name": "Réceptions en attente"
+      },
+      "mailbox_content": {
+        "name": "Contenu de la boîte aux lettres",
+        "state": {
+          "letter": "Courrier",
+          "parcel": "Colis",
+          "empty": "Vide",
+          "unknown": "Inconnu"
+        }
+      },
+      "battery": {
+        "name": "Batterie"
+      },
+      "reminder_interval": {
+        "name": "Intervalle de rappel"
+      }
+    },
+    "event": {
+      "mailbox_event": {
+        "name": "Événement boîte aux lettres",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "mailbox_closed": "Boîte aux lettres fermée",
+              "mailbox_open": "Boîte aux lettres ouverte",
+              "unknown": "Inconnu"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "name": "Photo du contenu de la boîte aux lettres"
+      }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "name": "Connexion"
+      },
+      "battery_low": {
+        "name": "Batterie faible"
+      },
+      "premium": {
+        "name": "Securpost Premium"
+      },
+      "email_notifications": {
+        "name": "Notifications e-mail"
+      },
+      "push_notifications": {
+        "name": "Notifications push"
+      }
+    }
+  }
+}

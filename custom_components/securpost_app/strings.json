@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Securpost",
+        "description": "Sign in with the Securpost account you use in the mobile app.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "two_factor": {
+        "title": "Two-factor authentication",
+        "description": "Enter the verification code for your Securpost account.",
+        "data": {
+          "code": "Verification code"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Securpost",
+        "description": "Your Securpost session has expired. Sign in again to reconnect.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password",
+      "invalid_code": "Invalid verification code",
+      "cannot_connect": "Failed to connect to Securpost"
+    },
+    "abort": {
+      "already_configured": "Account is already configured",
+      "reauth_successful": "Securpost reconnected successfully",
+      "already_in_progress": "Configuration flow is already in progress",
+      "no_session": "Securpost did not return a session"
+    },
+    "create_entry": {
+      "default": "Successfully connected to Securpost"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "package_count": {
+        "name": "Packages awaiting"
+      },
+      "mailbox_content": {
+        "name": "Mailbox content",
+        "state": {
+          "letter": "Letter",
+          "parcel": "Parcel",
+          "empty": "Empty",
+          "unknown": "Unknown"
+        }
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "reminder_interval": {
+        "name": "Reminder interval"
+      }
+    },
+    "event": {
+      "mailbox_event": {
+        "name": "Mailbox event",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "mailbox_closed": "Mailbox closed",
+              "mailbox_open": "Mailbox open",
+              "unknown": "Unknown"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "name": "Mailbox content photo"
+      }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "name": "Connection"
+      },
+      "battery_low": {
+        "name": "Battery low"
+      },
+      "premium": {
+        "name": "Securpost Premium"
+      },
+      "email_notifications": {
+        "name": "Email notifications"
+      },
+      "push_notifications": {
+        "name": "Push notifications"
+      }
+    }
+  }
+}

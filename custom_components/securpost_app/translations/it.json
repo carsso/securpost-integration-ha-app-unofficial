@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Collega Securpost",
+        "description": "Accedi con l'account Securpost che usi nell'app mobile.",
+        "data": {
+          "email": "E-mail",
+          "password": "Password"
+        }
+      },
+      "two_factor": {
+        "title": "Autenticazione a due fattori",
+        "description": "Inserisci il codice di verifica del tuo account Securpost.",
+        "data": {
+          "code": "Codice di verifica"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Ricollega Securpost",
+        "description": "La tua sessione Securpost è scaduta. Accedi di nuovo per ricollegarti.",
+        "data": {
+          "email": "E-mail",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail o password non validi",
+      "invalid_code": "Codice di verifica non valido",
+      "cannot_connect": "Impossibile connettersi a Securpost"
+    },
+    "abort": {
+      "already_configured": "Account già configurato",
+      "reauth_successful": "Securpost riconnesso con successo",
+      "already_in_progress": "Configurazione già in corso",
+      "no_session": "Securpost non ha restituito alcuna sessione"
+    },
+    "create_entry": {
+      "default": "Connesso a Securpost con successo"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "package_count": {
+        "name": "Consegne in attesa"
+      },
+      "mailbox_content": {
+        "name": "Contenuto della cassetta",
+        "state": {
+          "letter": "Lettera",
+          "parcel": "Pacco",
+          "empty": "Vuoto",
+          "unknown": "Sconosciuto"
+        }
+      },
+      "battery": {
+        "name": "Batteria"
+      },
+      "reminder_interval": {
+        "name": "Intervallo di promemoria"
+      }
+    },
+    "event": {
+      "mailbox_event": {
+        "name": "Evento cassetta postale",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "mailbox_closed": "Cassetta postale chiusa",
+              "mailbox_open": "Cassetta postale aperta",
+              "unknown": "Sconosciuto"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "mailbox_photo": {
+        "name": "Foto del contenuto della cassetta"
+      }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "name": "Connessione"
+      },
+      "battery_low": {
+        "name": "Batteria scarica"
+      },
+      "premium": {
+        "name": "Securpost Premium"
+      },
+      "email_notifications": {
+        "name": "Notifiche e-mail"
+      },
+      "push_notifications": {
+        "name": "Notifiche push"
+      }
+    }
+  }
+}
